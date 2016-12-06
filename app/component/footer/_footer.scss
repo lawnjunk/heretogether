@@ -1,0 +1,32 @@
+@import "theme";
+
+
+
+footer {
+
+  div {
+    height: 10em;
+    position: relative;
+  }
+
+  ul {
+
+    margin-top: 0;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: #E6400E;
+
+    li {
+      list-style: none;
+      display: inline;
+      margin-right: 12%;
+      font-size: 2em;
+
+      a {
+        color: $app-white;
+      }
+    }
+  }
+}

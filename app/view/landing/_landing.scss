@@ -1,0 +1,62 @@
+@import "theme";
+
+.landing {
+  background-color: $app-white;
+  .join-inner-container {
+    padding: 5%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: #19B589;
+
+    button {
+      color: $app-primary;
+    }
+
+    input {
+      margin-top: 5%;
+
+      &[type='submit'] {
+        color: #0078ae;
+      }
+    }
+
+    p {
+      padding: 0;
+      display: inline-block;
+      color: $app-white;
+    }
+
+    a {
+      color: $app-white;
+      display: inline-block;
+      font-size: 1.2em;
+      text-decoration: none;
+    }
+
+    @media(min-width: 300px){
+      width: 80%;
+      margin-top: 30%;
+    }
+
+    @media (min-width: 400px) {
+      width: 70%;
+      // margin-top: 35%;
+    }
+
+    @media (min-width: 600px) {
+      width: 50%;
+    }
+
+    @media (min-width: 1000px) {
+      width: 40%;
+    }
+
+    @media (min-width: 1200px) {
+      width: 40%;
+      margin-top: 10%;
+
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "theme";
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.75;
+    color: #333333;
+    background-color: #fff;
+    letter-spacing: .1rem;
+    text-align: center;
+}
+
+.navbar-brand {
+    float: left;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 55px;
+    height: 90px;
+}

@@ -1,0 +1,65 @@
+<section class="signup">
+  <form
+    name="signupForm"
+    ng-submit="signupCtrl.signup(signupCtrl.user)"
+    novalidate>
+
+    <div ng-class="{
+      'has-error': signupForm.username.$invalid,
+      'has-success': signupForm.username.$valid,
+    }"
+    class="form-group">
+
+    <input
+      class="form-control"
+      uib-tooltip="Username must have at least 5 characters"
+      tooltip-enable="signupForm.$submitted && signupForm.username.$invalid"
+      tooltip-is-open="signupForm.$submitted && signupForm.username.$invalid &&
+      signupForm.username.$focus"
+      tooltip-placement="top-left"
+      tooltip-trigger="'focus'"
+      ng-minlength="6"
+      required
+      type="text"
+      placeholder="Username"
+      ng-model="signupCtrl.user.username">
+    </div>
+
+    <div ng-class="{
+      'has-error': signupForm.email.$invalid,
+      'has-success': signupForm.email.$valid,
+    }"
+    class="form-group">
+    <input
+      class="form-control"
+      required type="email"
+      placeholder="Email"
+      ng-model="signupCtrl.user.email">
+    </div>
+
+    <div ng-class="{
+      'has-error': signupForm.password.$invalid,
+      'has-success': signupForm.password.$valid,
+    }"
+    class="form-group">
+    <input
+      class="form-control"
+      uib-tooltip="Password must have at least 8 characters"
+      tooltip-enable="signupForm.$submitted && signupForm.password.$invalid"
+      tooltip-is-open="signupForm.$submitted && signupForm.password.$invalid &&
+      signupForm.password.$focus"
+      tooltip-placement="top-left"
+      tooltip-trigger="'focus'"
+      required
+      type="password"
+      ng-minlength="8"
+      placeholder="Password"
+      ng-model="signupCtrl.user.password">
+    </div>
+
+
+      <!-- <mock-hospital class="mock-hospital-container"> </mock-hospital> -->
+
+    <input type="submit" class="btn btn-primary" value="Submit">
+  </form>
+</section>
